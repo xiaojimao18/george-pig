@@ -1,0 +1,247 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #89B9F7;
+  overflow: hidden;
+}
+.skin {
+  background-color: #FFC4E0;
+}
+.border {
+  border: 5px solid #E795C0;
+}
+.george {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 240px;
+  height: 300px;
+  margin: auto;
+}
+/************************ 头部 ************************/
+.head {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  transform: rotate(20deg);
+  z-index: 4;
+}
+.head .nose {
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 30px;
+  height: 45px;
+  border-radius: 50%;
+}
+.head .nose-hole {
+  position: absolute;
+  top: 18px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #E795C0;
+}
+.head .nose-hole.left {
+  left: 3px;
+}
+.head .nose-hole.right {
+  left: 17px;
+}
+.head .long-nose {
+  position: absolute;
+  top: 35px;
+  left: 0;
+  width: 120px;
+  height: 75px;
+  border-radius: 80% 0% 0% 80% / 50% 50% 50% 50%;
+}
+.head .face-mask {
+  position: absolute;
+  top: 40px;
+  left: 55px;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+}
+.head .face {
+  position: absolute;
+  top: 35px;
+  left: 50px;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+}
+.head .ear {
+  position: absolute;
+  top: 0;
+  width: 20px;
+  height: 50px;
+  border-radius: 15px / 15px 15px 45px 45px;
+}
+.head .ear.left {
+  left: 80px;
+}
+.head .ear.right {
+  left: 120px;
+}
+.head .eye {
+  position: absolute;
+  top: 55px;
+  width: 20px;
+  height: 20px;
+  background-color: #FFF;
+  border-radius: 50%;
+}
+.head .eye::before {
+  content: ' ';
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #000;
+}
+.head .eye.left {
+  left: 65px;
+}
+.head .eye.right {
+  left: 105px;
+}
+.head .cheek {
+  position: absolute;
+  top: 85px;
+  left: 130px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #F5AACB;
+}
+.head .mouth {
+  position: absolute;
+  top: 135px;
+  left: 70px;
+  width: 40px;
+  height: 10px;
+  border-radius: 50% / 0 0 100% 100%;
+  border: 5px solid #C542A3;
+}
+.head .mouth::before {
+  content: ' ';
+  position: absolute;
+  left: -1px;
+  bottom: 0;
+  width: 42px;
+  height: 20px;
+  border-radius: 50% / 0 0 100% 100%;
+  background-color: #FFC4E0;
+}
+/************************ 身体 ************************/
+.body {
+  position: absolute;
+  top: 125px;
+  left: 40px;
+  width: 140px;
+  height: 140px;
+  border-radius: 50% / 60% 60% 30% 30%;
+  background-color: rgb(113, 139, 241);
+  border: 5px solid #2558D0;
+  z-index: 2;
+}
+/************************ 手臂 ************************/
+.arm {
+  position: absolute;
+  top: 185px;
+  width: 100px;
+  height: 8px;
+  border-radius: 5px;
+}
+.arm.left {
+  left: 0;
+  transform: rotate(-20deg);
+  z-index: 1;
+}
+.arm.right {
+  left: 140px;
+  transform: rotate(-160deg);
+  z-index: 3;
+}
+.arm .finger {
+  position: absolute;
+  left: 5px;
+  width: 20px;
+  height: 8px;
+  border-radius: 5px;
+}
+.arm .finger.top {
+  top: -8px;
+  transform: rotate(45deg);
+}
+.arm .finger.bottom {
+  top: 8px;
+  transform: rotate(-45deg);
+}
+/************************ 腿部 ************************/
+.leg {
+  position: absolute;
+  top: 255px;
+  width: 8px;
+  height: 40px;
+  border-radius: 4px;
+}
+.leg.left {
+  left: 90px;
+  z-index: 1;
+}
+.leg.right {
+  left: 140px;
+  z-index: 3;
+}
+.leg .foot {
+  position: absolute;
+  left: -20px;
+  bottom: -3px;
+  width: 30px;
+  height: 10px;
+  border-radius: 20% 70% 70% 20% / 50%;
+  background-color: #000;
+}
+/************************ 尾巴 ************************/
+.tail {
+  position: absolute;
+  top: 235px;
+  left: 185px;
+  transform: rotate(-20deg);
+  z-index: 1;
+}
+.tail .arc {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-bottom-left-radius: 100% 100%;
+  border: 6px solid #FFC4E0;
+  border-top: transparent;
+  border-right: transparent;
+}
+.tail .arc1 {
+  top: 1px;
+  left: 0;
+}
+.tail .arc2 {
+  top: 14px;
+  left: 11px;
+}
+.tail .circle {
+  position: absolute;
+  top: -5px;
+  left: 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 6px solid #FFC4E0;
+}
